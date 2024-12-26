@@ -39,7 +39,6 @@
 #include "scene/2d/sprite_2d.h"
 #include "scene/3d/sprite_3d.h"
 #include "scene/animation/animation_player.h"
-#include "scene/resources/text_line.h"
 #include "servers/audio/audio_stream.h"
 
 /// BOOL ///
@@ -351,9 +350,6 @@ void AnimationTrackEditAudio::draw_key(int p_index, float p_pixels_sec, int p_x,
 
 void AnimationTrackEditAudio::set_node(Object *p_object) {
 	id = p_object->get_instance_id();
-}
-
-void AnimationTrackEditAudio::_bind_methods() {
 }
 
 AnimationTrackEditAudio::AnimationTrackEditAudio() {
@@ -950,9 +946,6 @@ void AnimationTrackEditTypeAudio::draw_key(int p_index, float p_pixels_sec, int 
 		Color accent = get_theme_color(SNAME("accent_color"), EditorStringName(Editor));
 		draw_rect(rect, accent, false);
 	}
-}
-
-void AnimationTrackEditTypeAudio::_bind_methods() {
 }
 
 AnimationTrackEditTypeAudio::AnimationTrackEditTypeAudio() {
